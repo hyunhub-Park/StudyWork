@@ -1,0 +1,21 @@
+h1
+{
+    color: brown;
+}
+
+h2
+{
+    color: navy;
+}
+
+ol
+{
+    color: green;
+}
+
+table, th, td
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;
+}
