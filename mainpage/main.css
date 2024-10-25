@@ -1,0 +1,96 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.head_search_bar #search
+{
+    border: 2px solid #03c75a;
+    border-radius: 50px;
+    font-size: 15pt;
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 58px;
+    padding: 20px;
+    margin: 40px auto 10px auto;
+}
+
+.head_left_icons ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.head_left_icons_ul i
+{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.head_left_icons_ul i:hover
+{
+    width: 25px;
+    height: 25px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.head_nav_icons_ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.head_nav_icons_ul i:hover
+{
+    width: 25px;
+    height: 25px;
+    background-color: gainsboro;
+    border-radius: 50%;
+
+}
+
+.head_nav_icons_ul i
+{
+    
+    margin: 0 10px;
+}
+
+.head_right_icons ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.head_right_icons_ul i
+{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.head_right_icons_ul i:hover
+{
+    width: 25px;
+    height: 25px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
