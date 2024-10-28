@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>507p HomeWork</title>
+
+    <style>
+        table, td
+        {
+            border: 1px solid gainsboro;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        tr
+        {
+            text-align: center;
+        }
+    </style>
+
+    <!--JavaScript body태그 안에 작성하면 열-중앙에 배치됨.....-->
+    <script>
+        document.write("<h1>자리 배치도</h1>");
+
+        var memNum = prompt("총 입장객 수를 입력해주세요.")
+        var colNum = prompt("한 줄에 앉을 인원의 수를 입력해주세요.");
+
+        if (memNum%colNum === 0)
+        {
+            var rowNum = parseInt(memNum/colNum);
+        } else
+        {
+            rowNum = parseInt(memNum/colNum) + 1;
+        }
+
+        // document.write("필요한 줄은 총 " + rowNum + "줄 입니다.")
+
+        var i, j;
+        
+        document.write("<table>");
+        for (i = 0; i <= memNum; i++)
+        {
+            document.write("<tr>");
+            for (j = 1; j <= colNum; j++)
+            {
+                var seatNum = i * colNum + j;   // 조금 복잡하지만 일단 외우자......
+
+                if (seatNum > memNum)
+                {
+                    break;
+                }
+
+                document.write("<td>좌석" + seatNum + " </td>")
+            }
+            document.write("<br>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+</body>
+</html>
