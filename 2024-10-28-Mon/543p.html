@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>543p HomeWork</title>
+
+    <style>
+        ul
+        {
+            list-style: none;
+            display: flex;
+        }
+        li
+        {
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid gainsboro;
+            margin: 5px;
+            width: 155px;
+            height: 40px;
+        }
+        li a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        #show
+        {
+            border: 2px solid ghostwhite;
+            border-radius: 15px;
+            width: 500px;
+            height: 300px;
+            margin-left: 45px;
+            
+        }
+        
+    </style>
+
+    <Script>
+        function changeColor (color)
+        {
+            let show = window.document.getElementById('show');
+
+            show.style.backgroundColor = color;
+        }
+
+    </Script>
+</head>
+<body>
+    <ul>
+        <li><a href="#" id="Green" onclick="changeColor('green')">Green</a></li>
+        <li><a href="#" id="Orange" onclick="changeColor('orange')">Orange</a></li>
+        <li><a href="#" id="Purple" onclick="changeColor('purple')">Purple</a></li>
+    </ul>
+
+    <div id="show">
+
+    </div>
+    
+</body>
+</html>
