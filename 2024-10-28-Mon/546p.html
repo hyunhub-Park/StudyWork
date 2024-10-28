@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>546p HomeWork</title>
+
+    <style>
+        #open
+        {
+            position: absolute;
+            top: 280px;
+            left: 12px;
+        }
+        
+        p
+        {
+            width: 400px;
+        }
+
+
+
+    </style>
+
+    <script>
+        // function showDetail ()
+        // {
+        //     document.getElementById('section').style.display = "block";
+        //     document.getElementById('open').style.display = "none";
+        // }
+
+        // function closeScreen ()
+        // {
+        //     document.getElementById('section').style.display = "none;"
+        //     document.getElementById('open').style.display = "block";
+        // }
+
+        
+        function showDetail ()
+        {
+        document.querySelector('#section').style.display = "block";	// 상세 설명 부분을 화면에 표시
+        document.querySelector('#open').style.display = "none";   // '상세 설명 보기' 단추를 화면에서 감춤
+        }
+
+        function closeScreen ()
+        {
+        document.querySelector('#section').style.display = "none";	   // 상세 설명 부분을 화면에서 감춤
+        document.querySelector('#open').style.display = "block";	 // '상세 설명 보기' 단추를 화면에 표시
+        }
+  
+    </script>
+</head>
+
+<body>
+    <img src="flower.jpg" alt="flower">
+    <button class="click" id="open" onclick="showDetail()" style="display: block;">상세 설명 보기</button>
+    
+    <div id="section" class="contents" style="display: none;">
+        <h3>등심붓꽃</h3>
+        <p>
+            북아메리카 원산으로 각지에서 관상초로 흔히 심고 있는 귀화식물이다. 
+            길가나 잔디밭에서 흔히 볼 수 있다. 
+            아주 작은 씨앗을 무수히 많이 가지고 있는데 바람을 이용해 씨앗들을 날려보내거나, 
+            뿌리줄기를 통해 동일한 개체들을 많이 만들어 냄으로써 번식한다. 
+        </p>
+        <button class="click" id="close" onclick="closeScreen()">상세 설명 닫기</button>
+    </div>
+</body>
+</html>
