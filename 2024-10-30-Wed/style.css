@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu
+{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    width: 1200px;
+    margin: 20px auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    padding: 16px 16px;
+    text-align: center;
+}
+
+ul li:hover
+{
+    background-color: aquamarine;
+}
+
+.dropDown
+{
+    position: relative;
+}
+
+.dropDown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #d6d2e4;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.dropDown-content a
+{
+    display: block;
+    padding: 16px 16px;
+}
+
+.dropDown-content a:hover
+{
+    background-color: bisque;
+    width: auto;
+}
+
+.dropDown:hover .dropDown-content
+{
+    display: block;
+}
+
+
+/*회전목마 구간*/
+
+div.slideShow
+{
+    background-color: white;
+    height: 465px;
+    /* width: 100%; */
+    min-width: 960px;
+    /* 최상위 부모니까 absolute를 위해 relative 적용! */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+img
+{
+    width: 1200px;
+    height: 465px;
+    border-radius: 50px;
+}
+
+div.slideShow_slides
+{
+    position: absolute;
+    /* 부모의 몇%를 차지하는가? */
+    width: 100%;    /*부모것 다 차지하겠다. 960px*/
+    height: 100%;    /*부모것 다 차지하겠다. 960px*/
+}
+
+div.slideShow_slides a
+{
+    /* absolute해버리면 원래 block이 됨. 다 겹쳐졌는데, 옆배치를 해야하니 display inline block으로. */
+    position: absolute;
+    /* 부모의 몇%를 차지하는가? */
+    width: 100%;    /*부모것 다 차지하겠다. 960px*/
+    height: 100%;    /*부모것 다 차지하겠다. 960px*/
+    display: inline-block;
+    text-align: center;
+}
+
+div.slideShow_nav a
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* color: rgba(255, 255, 255, 0.877); */
+    color: white;
+    font-size: 62px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+div.slideShow_nav a.pre
+{
+    margin-left: -462px;
+}
+
+div.slideShow_nav a.next
+{
+    margin-left: 400px;
+}
+
+div.slideShow_indicator
+{
+    position: absolute;
+    /* 부모의 bottom */
+    bottom: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+div.slideShow_indicator a
+{
+    display: inline-block;
+    color: white;
+    padding: 7px;
+    font-size: 24px;
+}
+
+div.slideShow_indicator a.active
+{
+    color: rgba(255, 123, 0, 0.9);
+}
+
+/* 바디 구간. */
+
+main
+{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav
+{
+    display: flex;
+    justify-content: left;
+    border: 1px dotted blueviolet;
+    background-color: blueviolet;
+    opacity: 0.5;
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+nav h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section
+{
+    display: inline-block;
+    width: 50%;
+    /* border: 1px dotted rgba(45, 0, 87, 0.808); */
+    background-color: var(--main-color);
+    padding: 10px
+}
+
+section > h2 
+{
+    margin: 10px 0px 20px;
+}
+
+section div 
+{
+    width: 100%;
+}
+
+table
+{
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+}
+
+tr, th, td
+{
+    justify-self: left;
+    width: 33%;
+    height: 30px;
+    left: 0;
+    box-sizing: border-box;
+    text-align: start;
+    padding-left: 5px;
+}
+
+td
+{
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
+
+#input_id
+{
+    padding-left: 50px;
+    color: gray;
+}
+
+input, select
+{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+span 
+{
+    color: gray;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+#not_input
+{
+    border-radius: 10px;
+    opacity: 0.5;
+    height: 40px;
+    padding: 5px;
+    margin: 5px 0px;
+    line-height: 40px;
+}
+
+.button
+{
+    height: 40px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 900;
+    padding: 0;
+}
+
+aside
+{
+    display: flex;
+    justify-content: right;
+    border: 1px dotted blueviolet;
+    background-color: blueviolet;
+    opacity: 0.5;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+aside h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 280px;
+}
