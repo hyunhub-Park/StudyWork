@@ -1,13 +1,6 @@
 ul
 {
     list-style-type: none;
-    /*부모에게 flex
-    display: flex;
-    flex-direction: row; default
-    flex-wrap: nowrap; default
-    justify-content: center; -> 안해도 됨. 왼쪽으로 붙었기 때문에.
-    align-items: center;
-    ✔ padding-left: 0px;*/
 }
 
 li
