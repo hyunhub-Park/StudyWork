@@ -1,0 +1,327 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header
+{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    background-color: rgb(218, 255, 187);
+    box-shadow: 0px 10px 30px -20px rgb(181, 255, 112);
+}
+
+header span
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration-line: none;
+    color:rgb(0, 75, 21);
+}
+
+.header_logo
+{
+    position: absolute;
+    left: 2%;
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color:rgb(0, 75, 21);
+}
+
+.header_logo i
+{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header_menu
+{
+    position: absolute;
+    left: 70%;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header_menu a
+{
+    color:rgb(0, 75, 21);
+    padding-right: 30px;
+    font-size: 25px;
+}
+
+.header_menu a:hover
+{
+    color:rgb(0, 75, 21);
+    text-decoration-line: underline;
+    transition: 1s;
+}
+
+.sign_up
+{
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    border: 1px solid rgb(146, 164, 151);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.sign_up:hover
+{
+    background-color: rgb(0, 75, 21);
+    color: white;
+    transition: 0.8s;
+}
+
+/*바디*/
+main
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+main .board_left
+{
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+
+main .board_left_list_row1_a
+{
+    font-weight: 600;
+    margin-left: 10px;
+    height: 42px;
+    line-height: 42px;
+    border-top: 1px solid rgb(0, 75, 21);
+    border-bottom: 1px solid rgb(0, 75, 21);
+}
+
+main .board_left_list_row2_a
+{
+    font-weight: 600;
+    margin-left: 10px;
+    height: 42px;
+    line-height: 42px;
+    border-top: 1px solid rgb(0, 75, 21);
+    border-bottom: 1px solid rgb(0, 75, 21);
+}
+
+main .board_left_list_row3_a
+{
+    font-weight: 600;
+    margin-left: 10px;
+    height: 42px;
+    line-height: 42px;
+    border-top: 1px solid rgb(0, 75, 21);
+    border-bottom: 1px solid rgb(0, 75, 21);
+}
+
+
+main .board_left .board_left_list .board_left_list_row1_a .board_left_list_row1
+{
+    color: green;
+    border-top: 3px solid green;
+}
+
+.a_list1
+{
+    background-color: rgb(218, 255, 187);
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.a_list1 li
+{
+    list-style: none;
+    padding: 3px 0;
+}
+
+/* board center */
+main .board_center
+{
+    float: left;
+    width: 72%;
+    height: 600px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+main .board_center .board_center_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+main .board_center .board_center_header h2
+{
+    color: rgb(0, 75, 21);   
+}
+
+main .board_center .board_center_header table td
+{
+    font-size: 12px;
+    padding: 5px; 
+}
+
+main .board_center .board_center_2ndheader
+{
+    margin-top: 20px;
+}
+
+main .board_center .board_center_2ndheader .board_center_2ndheader_2ndname
+{
+    font-size: 13px;
+}
+
+main .board_center .board_center_2ndheader .board_center_selectNum
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button
+{
+    background-color: rgb(0, 75, 21);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+main .board_center .board_center_2ndheader .board_center_selectNum select, input
+{
+    height: 25px;
+    width: 100px;
+}
+
+main .board_center .board_center_2ndheader .board_center_selectNum input
+{
+    width: 200px;
+    height: 20px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard
+{
+    margin-top: 10px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .inboard_table
+{
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid green;
+    border-collapse: collapse;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .inboard_table th
+{
+    padding-bottom: 12px;
+    padding-top: 8px;
+    background-color: rgb(238, 238, 238);
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .inboard_table td
+{
+    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .inboard_table .content
+{
+    text-align: left;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .board_bottom
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .page_selected
+{
+    background-color: rgb(0, 75, 21);
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .board_bottom .page
+{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .board_bottom .page:hover
+{
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .board_bottom a
+{
+    background-color: #e9e9e9;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+main .board_center .board_center_2ndheader .board_center_inboard .board_bottom .write
+{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
