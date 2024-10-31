@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+
+    <link rel="stylesheet" href="resume.css">
+    <script src="resume.js"></script>
+</head>
+<body onload="onLoad();">
+    <form action="#" method="post" id="form" class="myform">
+
+        <p>회원 기본 정보</p>
+
+        <div class="default_Info">
+            <label for="id">아이디:</label>
+            <table class="default_Info_p1">
+                <input type="text" name="id" id="id"> 
+                <span><i>4~12자의 영문 대소문자와 숫자로만 입력</i></span> <br>
+            </table>
+                
+            <label for="pwd">비밀번호:</label>
+            <table class="default_Info_p2">
+                <input type="password" name="pwd" id="pwd">
+                <span><i>4~12자의 영문 대소문자와 숫자로만 입력</i></span> <br>
+            </table>
+                
+            <label for="pwd_check">비밀번호확인:</label>
+            <table class="default_Info_p3">
+                <input type="password" name="pwd_check" id="pwd_check"> <span></span><br>
+            </table>
+                
+            <label for="mail">메일주소:</label>
+            <table class="default_Info_p4">
+                <input type="text" name="mail" id="mail">
+                 <span><i>ex) sammy@gmail.com</i></span> <br>
+            </table>
+        
+            <label for="name">이름:</label>
+            <table class="default_Info_p5">
+                <input type="text" name="name" id="name"> <span></span><br>
+            </table>
+            </div>
+        
+        <p>개인 신상 정보</p>
+    
+        <div class="private_Info">
+            <label for="serial_num">주민등록번호:</label>
+            <table class="private_Info_p1">
+                <input type="text" name="serial_num1" id="serial_num1">
+                <span>-</span>
+                <input type="text" name="serial_num2" id="serial_num2"> <span></span><br>
+            </table>
+                
+            <label for="birth">생일:</label>
+            <table class="private_Info_p2">
+                <input type="text" name="birth" id="birth">
+                <span>년 </span>
+                    
+                <select name="birth_month" id="birth_month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                </select>
+                <span>월 </span>
+                    
+                <select name="birth_day" id="birth_day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                </select>
+                <span>일</span> <br>
+            </table>
+    
+            <label for="like">관심분야:</label>
+            <table class="private_Info_p3">
+                <input type="checkbox" name="like1" id="like1">
+                <label id="ano_private_Info_p3" for="like1">Java</label>
+            
+                <input type="checkbox" name="like2" id="like2">
+                <label id="ano_private_Info_p3" for="like2">Android</label>
+            
+                <input type="checkbox" name="like3" id="like3">
+                <label id="ano_private_Info_p3" for="like3">PHP</label>
+            
+                <input type="checkbox" name="like4" id="like4">
+                <label id="ano_private_Info_p3" for="like4">JAVA Script</label>
+                
+                <input type="checkbox" name="like4" id="like4">
+                <label id="ano_private_Info_p3" for="like4">Python</label>
+            
+                <span id="span_private_Info_p3"><i>*하나 이상 체크</i></span> <br>
+            </table>
+            
+            <div id="bundle_private_Info_p4">
+                <label id="label_private_Info_p4" for="intro" placeholder>자기소개</label>
+                <table class="private_Info_p4">
+                    <textarea name="intro" id="intro" cols="77" rows="5"></textarea> <br>
+                </table>
+            </div>
+        
+            <div id="bundle_private_Info_p5">
+                <label id="label_private_Info_p5" for="permission">약관동의</label> <!--라벨 아닌듯??-->
+                <table class="private_Info_p5">
+                    <input type="checkbox" name="permission1" id="permission1" value="1">
+                    <!-- <label id="ano_private_Info_p5" for="permission1">만 14세 이상입니다.</label> <br> -->
+                    <span id="span">만 14세 이상입니다.</span> <br>
+                    
+                    <input type="checkbox" name="permission2" id="permission2" value="2">
+                    <!-- <label id="ano_private_Info_p5" for="permission2">이용약관 동의 <a href="#" target="_blank">내용보기</a></label> <br> -->
+                     <span id="span">이용약관 동의 <a href="#" target="_blank">내용보기</a></span> <br>
+                    
+                    <input type="checkbox" name="permission3" id="permission3" value="3">
+                    <!-- <label id="ano_private_Info_p5" for="permission">개인정보 수집 및 이용 동의 <a href="#" target="_blank">내용보기</a></label> <br> -->
+                     <span id="span">개인정보 수집 및 이용 동의</span>
+                </table>
+            </div>
+                
+        </div>
+        <div id="under_button">
+            <input id="submit_button" type="submit" value="회원가입">
+            <input id="reset_button" type="reset" value="다시 입력">
+            <!-- <button id="submit_button" type="submit" value="회원가입">회원가입</button>
+            <button id="reset_button" type="reset" value="다시 입력">다시 입력</button> -->
+        </div>
+    </form>
+</body>
+</html>
