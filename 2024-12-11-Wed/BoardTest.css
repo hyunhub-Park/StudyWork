@@ -1,0 +1,81 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    margin-top: 50px;
+    padding-top: 20px;
+    height: 100vh;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form
+{
+    width: 500px;
+    margin: 0 auto;
+    padding: 60px;
+    border: 1px solid #d9d9d9;
+}
+
+.id,
+.pwd
+{
+    width: 100%;
+    text-decoration: underline #d9d9d9;
+}
+
+.signInBtn
+{
+    background-color: #d9d9ff;
+    font-weight: bold;
+    height: 50px;
+}
+
+#signIn
+{
+    border: none;
+    background-color:  #d9d9ff;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 50px;
+}
+
+#underLine
+{
+    background-color: #cfd0cf;
+    border: 0px;
+    height: 1px;
+}
+
+#email,
+#pwd
+{
+    border: none;
+    width: 100%;
+    height: 45px;
+    font-size: 10pt;
+}
+
+input::placeholder
+{
+    color: #cfd0cf;
+}
+
+span
+{
+    font-size: 10pt;
+    margin-left: -295px;
+}
+
+#listTr img
+{
+	width: 1px;
+	height: 1px;
+}

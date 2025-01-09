@@ -1,0 +1,83 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/b551008ea2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SignInTest.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <form method="post" action="signInProc.jsp">
+
+        <div id="welcome" align="center">
+            <!-- <span><%=id%>님 환영합니다.</span> -->
+            <h3>님 환영합니다.</h3>
+            <br>
+            <br>
+            <ul>
+                <li><a href="modifyForm.jsp">정보수정</a></li>
+                <li><a href="deleteForm.jsp">회원탈퇴</a></li>
+                <li><a href="logout.jsp">로그아웃</a></li>
+            </ul>
+        </div>
+        
+            <div id="fixed_icons">
+            <i class="fa-solid fa-play fa-2x" id="play_button" style="color: #333333;"></i>
+            <i class="fa-solid fa-forward-step fa-2x" id="forward_button" style="color: #333333;"></i>
+            <i class="fa-solid fa-backward-step fa-2x" id="backward_button" style="color: #333333;"></i>
+            <!-- <a href="main.html"><span id=up_fixed><i class="fa-solid fa-arrow-up fa-2x"></i></span></a>
+            <a href="main.html"><span id=settings_fixed><i class="fa-solid fa-gear fa-2x"></i></span></a> -->
+        </div>
+
+
+
+
+        <div class="signIn" align="center">
+            <div class="form-id inner-row v2">
+                <input id="email" type="text" name="email" placeholder="아이디(이메일)" tabindex="0" autocomplete="on" autocorrect="off" spellcheck="false" class="inputTxt">
+                <hr id="underLine">
+                <br>
+                <input id="pwd" type="password" placeholder="비밀번호" autocomplete="off" autocorrect="off" spellcheck="false" class="inputTxt">
+                <hr id="underLine">
+                <br>
+                <span><input data-v-3b9efe22="" id="signinSavedId" type="checkbox">&nbsp;&nbsp;아이디 저장</span>
+            </div>
+
+            <!-- 소셜로그인시 넘어가는 링크까지는 넣어주기
+            T ID - https://auth.skt-id.co.kr/v2/login?transaction_id=a3e23e28-0d01-4c52-8a7e-20508de0df25&state=193e2ae51f02d333137322d64&authenticator_type=SESSION&api_version=0 -->
+            <br>
+            <div class="signInBtn" align="center">
+                <input id="signIn" type="submit" value="로그인">
+            </div>
+
+            <div class="findInfo">
+                <ul>
+                    <li>
+                        <a href="#">아이디 찾기</a>
+                    </li>
+                    <p>｜　</p>
+                    <li>
+                        <a href="#">비밀번호 찾기</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="howToSignIn" align="center">
+                <ul>
+                    <li id="tSignIn">
+                        <a href="#" id="ts">T 아이디로 로그인</a>
+                    </li>
+                    <li id="phoneSignIn">
+                        <a href="#">휴대폰 번호로 로그인</a>
+                    </li>
+                </ul>
+                <span>이 사이트는 reCAPTCHA로 보호되며 Google 개인정보처리방침 및 서비스 약관이 적용됩니다.</span>
+            </div>
+        </div>
+	</form>
+</body>
+</html>

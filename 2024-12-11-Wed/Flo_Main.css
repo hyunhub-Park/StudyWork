@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40pt;
+  color: aqua;
+}
+
+.menu_contents_left .logo
+{
+    color: #3f3fff;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu_contents_left,
+.menu_contents_center,
+.menu_contents_right
+{
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu_contents_left li,
+.menu_contents_right li
+{
+    margin: auto 20px auto 20px;
+}
+
+.menu a
+{
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 10px;
+}
+
+#search
+{
+    height: 40px;
+    width: 400px;
+    border-radius: 50px;
+    color: #d2d2d2;
+}
+
+/*회전목마 구간*/
+
+div.slideShow
+{
+    background-color: white;
+    height: 340px;
+    /* width: 100%; */
+    min-width: 960px;
+    /* 최상위 부모니까 absolute를 위해 relative 적용! */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+img
+{
+    width: 1200px;
+    height: 340px;
+    border-radius: 5px;
+}
+
+div.slideShow_slides
+{
+    position: absolute;
+    /* 부모의 몇%를 차지하는가? */
+    width: 100%;    /*부모것 다 차지하겠다. 960px*/
+    height: 100%;    /*부모것 다 차지하겠다. 960px*/
+}
+
+div.slideShow_slides a
+{
+    /* absolute해버리면 원래 block이 됨. 다 겹쳐졌는데, 옆배치를 해야하니 display inline block으로. */
+    position: absolute;
+    /* 부모의 몇%를 차지하는가? */
+    width: 100%;    /*부모것 다 차지하겠다. 960px*/
+    height: 100%;    /*부모것 다 차지하겠다. 960px*/
+    display: inline-block;
+    text-align: center;
+}
+
+div.slideShow_nav a
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* color: rgba(255, 255, 255, 0.877); */
+    color: #333333;
+    font-size: 62px;
+    transform: translateY(-50%);
+    /* opacity: 0.5; */
+}
+
+div.slideShow_nav a.pre
+{
+    margin-left: -650px;
+}
+
+div.slideShow_nav a.next
+{
+    margin-left: 625px;
+}
+
+div.slideShow_indicator
+{
+    position: absolute;
+    /* 부모의 bottom */
+    bottom: -40px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+div.slideShow_indicator a
+{
+    display: inline-block;
+    color: #c1c1c1;
+    padding: 7px;
+    font-size: 15px;
+}
+
+div.slideShow_indicator a.active
+{
+    color: #3f3fff;
+}
+
+#testing
+{
+    margin: 10px;
+    padding: 20px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+#testing img
+{
+    width: 175px;
+    height: 175px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Fixed Icon */
+#fixed_icons
+{
+    background-color: #000000;
+    /* width: 1200px; */
+    width: 100%;
+    height: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    width: 50px;
+    height: 50px; */
+    position: fixed;
+    bottom: 0px;
+    /*border-radius: 100px;
+    right: 90px;
+    border: 1px solid #ebebeb; */
+}
+
+#play_button
+{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+}
+
+#backward_button
+{
+    position: fixed;
+    left: 30%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+}
+
+#forward_button
+{
+    position: fixed;
+    left: 70%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+}
+
+.menu_contents_center li i
+{
+    position: relative;
+    left: 25px;
+}
+
+#footer_top
+{
+    margin-top: 20px;
+}
+
+footer
+{
+    list-style: none;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer ul
+{
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 150px;
+    font-size: 10pt;
+    color: #9597a8;
+    width: 200px
+}

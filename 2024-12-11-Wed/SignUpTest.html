@@ -1,0 +1,60 @@
+<!-- ✅✅✅✅ 폰트변경 ✅✅✅✅ -->
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/b551008ea2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SignUpTest.css">
+
+<form method="post" action="signUpProc.jsp" name="signUpForm">
+	<div class="SignUp">
+		<span id="title">회원 가입 정보 입력</span>
+        <div class="specification">
+            <ul>
+                <li>
+                    <span>아이디</span>
+                    <input type="text" name="id" id="underId">
+					&nbsp;
+                    <input id="checkId" type="button" value="중복확인" onClick="idCheck()" />
+					<br>
+                    <span>비밀번호</span>
+                    <input type="password" name="pwd">
+					<br>
+                    <span>비밀번호 확인</span>
+                    <input type="password" name="pwd">
+					<br>
+					<span>이름</span>
+					<input type="text" name="name">
+					<br>
+					<span>전화번호</span>
+					<select name="phone1">
+						<option value="02">02</option>
+						<option value="010">010</option>
+					</select> - <input type="text" name="phone2" size="5" /> - <input type="text" name="phone3" size="5" />
+					<br>
+					<span>이메일</span>
+					<input type="text" name="email" />
+					<br>
+					<span>우편번호</span>
+					<input type="text" name="zipCode" />
+					<input id="findZip" type="button" value="찾기" onClick="zipCheck()" />
+					<br>
+					<span>주소1</span>
+					<input type="text" name="address1" size="40" />
+					<br>
+					<span>주소2</span>
+					<input type="text" name="address2" size="30" />
+					<br>
+					<input id="signIn" type="button" value="회원가입" onClick="inputCheck()" />	<!-- 전송 전, 웹브라우저에서 정보를 점검 후 전송. -->
+					&nbsp;&nbsp;
+					<input id="reInput" type="reset" value="다시입력" />
+				</li>
+			</ul>
+		</div>
+    </div>
+</form>
