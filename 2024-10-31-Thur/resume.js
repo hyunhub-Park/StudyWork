@@ -8,7 +8,7 @@ function onLoad ()
 
     const serial1Pattern = /^[0-9]{6,}$/;   // 9자리 숫자만 입력 가능.
     const serial2Pattern = /^[0-9]{6,}$/;   // 9자리 숫자만 입력 가능.
-    const birthPattern = /^[0-2024]{4,}$/;   // 4자리 숫자만 입력 가능, 최댓값은 2024.
+    const birthPattern = /^[0-9]{4,}$/;   // 4자리 숫자만 입력 가능, 최댓값은 2024.
     
     // 객체 찾기.
     const inputID = document.querySelector("#id");
@@ -43,7 +43,7 @@ function onLoad ()
     
     inputEmail.addEventListener("blur", () => validate(inputEmail, emailPattern, "이메일 형식이 맞지 않습니다."));
     inputName.addEventListener("blur", () => validate(inputName, namePattern, "한글(2~4자),영문(2~10자/첫글자 대문자), 공백 입력가능."));
-
+    
     inputSerial1.addEventListener("blur", () => validate(inputSerial1, serial1Pattern, "숫자 9자리(0~9)를 입력해주세요."));
     inputSerial2.addEventListener("blur", () => validate(inputSerial2, serial2Pattern, "숫자 9자리(0~9)를 입력해주세요."));
     inputBrith.addEventListener("blur", () => validate(inputBrith, birthPattern, "숫자 4자리(1900~2024)를 입력해주세요."));
